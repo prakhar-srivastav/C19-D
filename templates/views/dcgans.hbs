@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+</head>
+<body>
+   {{>header}}
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <form>
+			<input  placeholder="Seed value">
+			<button>Generate Image</button>
+		</form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <img  id="img" src="">
+		<p id="message"> </p>
+		
+
+    <p>Generative adversarial networks (GANs) are algorithmic architectures that use two neural networks, <br>
+       pitting one against the other in order to generate new, synthetic instances of data that can pass<br>
+       for real data. GANs are considered a special type of deep learning models. GANs consist of two different<br>
+       types of networks. The first network is trained on image generation while the other is used for discrimination. <br>Those networks are trained simultaneously. Eventually, The Generator network is able to take random noise and <br> map it into images such that the discriminator cannot tell which images came from the dataset and which images <br> came from the generator tell which images came from the dataset and which images <br> came from the generator. <br>
+     
+
+
+   </p>
+
+   <img src="./img/Generator.jpeg">
+   
+
+  
+
+   {{>footer}}
+   <script src="/js/dcgans.js"></script>
+</body>
+</html>

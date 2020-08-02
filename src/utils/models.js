@@ -1,5 +1,5 @@
 const tf = require('@tensorflow/tfjs')
-require('@tensorflow/tfjs-node')
+const tfn =require('@tensorflow/tfjs-node')
 const PNG = require("pngjs").PNG
 const  fs = require("fs")
 const path = require('path')
@@ -9,8 +9,8 @@ const models=[]
 
 
 // Model Path
-const generatorPath= 'file://C:/Users/prakhar/Desktop/covid-app/models/generator/model.json'
-
+const handler= path.join(__dirname,'../../models/generator/model.json')
+const generatorPath = tfn.io.fileSystem(handler)
 
 
 

@@ -16,7 +16,7 @@ app.set('view engine', 'hbs')
 app.set('views',viewsPath)
 hbs.registerPartials(partialPath)
 
-
+console.log(path.resolve(__dirname))
 
 
 
